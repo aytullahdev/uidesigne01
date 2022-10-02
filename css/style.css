@@ -1,0 +1,221 @@
+body{
+    background: #F4FFFC;
+    padding: 20px 30px;
+
+}
+.card_collections{
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3,1fr);
+    padding: 40px;
+    gap: 70px;
+}
+.card{
+    background: #EDF9F6;
+    /* border */
+    border: 1px solid #D8EAE5;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 24px;
+    margin: auto;
+    width: 100%;
+    width: -webkit-fill-available;
+}
+.card_tittle{
+    width: 78px;
+    height: 60px;
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 32px;
+    /* or 133% */
+
+    letter-spacing: -0.02em;
+
+    /* Title */
+
+    color: #0C2F24;
+
+}
+.card_body{
+    width: 100%;
+
+    background: #FFFFFF;
+/* asd */
+
+    box-shadow: 0px 17.6128px 35.2256px rgba(0, 0, 0, 0.05), 0px 5.28383px 8.80639px rgba(0, 0, 0, 0.05), 0px 1.76128px 5.28383px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;    
+}
+.card_body_large{
+    height: 392px;
+}
+.card_body_small{
+    height: 200px;
+}
+.card_body_medium{
+    height: 274px;
+}
+.vertical_flex{
+    display: flex;
+    flex-direction: column;
+    
+    gap: 40px;
+}
+/* Card Banner */
+.card_banner{
+    margin: auto;
+    max-width: 280px;
+    height: 406px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 12px;
+    background: #FFFFFF;
+/* asd */
+
+    box-shadow: 0px 17.6128px 35.2256px rgba(0, 0, 0, 0.05), 0px 5.28383px 8.80639px rgba(0, 0, 0, 0.05), 0px 1.76128px 5.28383px rgba(0, 0, 0, 0.05);
+border-radius: 16px;
+}
+.card_banner_body>h3{
+    font-family: 'Graphik LCG';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+/* identical to box height, or 120% */
+
+    letter-spacing: -0.02em;
+
+    color: #252525;
+
+}
+.card_banner_body>p{
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 20px;
+/* or 143% */
+
+
+color: #727272;
+}
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    
+}
+.card_banner_holder{
+    background-image: url('../bgradial.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+   
+    
+}
+.brand_moto{
+
+}
+.brand_moto>h1{
+    /* H1 */
+
+font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 400;
+font-size: 64px;
+line-height: 72px;
+/* or 112% */
+
+letter-spacing: -0.02em;
+
+/* Title */
+
+color: #0C2F24;
+}
+.brand_moto>p{
+    font-family: 'Graphik LCG';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 32px;
+/* or 133% */
+
+letter-spacing: -0.01em;
+
+/* Text */
+
+color: #5B6A66;
+
+}
+@media only screen and (max-width: 780px) {
+    .card_collections{
+       
+        grid-template-columns: repeat(2,1fr);
+        gap: px;
+        padding: 40px;
+    }
+    
+  }
+@media only screen and (max-width: 600px) {
+    .header{
+        grid-template-columns: 1fr;
+        
+    }
+    .heading{
+        font-size: 25px;
+        margin: 50px 0;
+    }
+    .card_collections{
+       
+        grid-template-columns: repeat(1,1fr);
+        gap: 60px;
+        padding: 0px;
+    
+    }
+    
+  }
+
+  .swiper {
+    margin: 40px 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .text-center{
+     text-align: center;
+  }
+  .text-primary{
+    color: orange;
+  }

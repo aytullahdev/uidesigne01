@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <title>Figma</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="brand_moto">
+        <h1>Break the ice with your users</h1>
+        <p>Create custom widgets that show up whereever & whenever you want.</p>
+      </div>
+      <div class="card_banner_holder">
+        <div class="card_banner">
+          <div>
+            <img src="./bannercardimg.jpg" width="100%" alt="" />
+          </div>
+          <div class="card_banner_body">
+            <h3>Hey, I'm a cue</h3>
+            <p>
+              You can create rich widgets like me and trigger them vai URL,
+              events fa-first-order JS.
+            </p>
+            <p>
+              We're currently in closed beta so please provide your email to
+              give it a try. We won't ever spam, promise!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Slider main container -->
+    <!-- Swiper -->
+    <div>
+        <h1 class="text-center heading">OUR PRODUCT <span class="text-primary">COLLECTIONS</span> </h1>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card">
+            <p class="card_tittle">Greet people</p>
+            <div class="card_body card_body_medium"></div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+ 
+    </div>
+
+    <div class="card_collections">
+      <div class="vertical_flex">
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_medium"></div>
+        </div>
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_medium"></div>
+        </div>
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_small"></div>
+        </div>
+      </div>
+      <div class="vertical_flex">
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_large"></div>
+        </div>
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_small"></div>
+        </div>
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_medium"></div>
+        </div>
+      </div>
+      <div class="vertical_flex">
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_small"></div>
+        </div>
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_medium"></div>
+        </div>
+        <div class="card">
+          <p class="card_tittle">Greet people</p>
+          <div class="card_body card_body_large"></div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 60,
+        freeMode: true,
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
